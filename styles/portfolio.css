@@ -1,112 +1,221 @@
-/*common shared style*/
-body {
-    font-family: 'Lato', sans-serif;
+*
+{
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
 .text-primary {
     color: #FD6E0A;
 }
-
-.btn-primary {
-    border-radius: 5px;
-    background: #FD6E0A;
-    border: 0px;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 15px 35px;
-
+.section-title {
+    color: #FD6E0A;
+}
+.Courses-title {
+    color: #FD6E0A;
+    font-size: 30px;
 }
 
-/* nav related styles*/
+.btn-primary {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 18px 35px;
+    height: 64px;
+    border-radius: 5px;
+    background: #FD6E0A;
+}
+
+.header {
+    background: #FFF8F3;
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+}
+
+/* header and navigation styles */
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 200px;
-}
-
-.section-title {
-    color: #181818;
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-}
-
-.section-description {
-    color: #757575;
-    text-align: center;
-    font-size: 18px;
+    padding: 50px 200px;
 }
 
 .nav-title {
-    color: #181818;
-    font-size: 45px;
     font-weight: 800;
+    font-size: 25px;
 }
 
-nav>ul {
+nav ul {
     display: flex;
     align-items: center;
 }
 
 nav li {
     list-style: none;
-    margin-right: 50px;
+    margin-left: 50px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #474747;
-}
-
-/* header related styles */
-.header {
-    background-color: #fff8f3;
-    background-image: url('../images/header_bg.png');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
-
+/* banner styles */
 .banner {
-    padding: 30px 30px 0 150px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.banner .profile-pic {
-    width: 500px;
-}
-
-.banner-content {
-    max-width: 500px;
-}
-
-.baner-greeting {
-    font-size: 45px;
-    color: #474747;
-    margin-bottom: 0;
+    margin: 0 200px;
 }
 
 .banner-title {
-    font-size: 45px;
     font-weight: 700;
-    margin-top: 5px;
+    font-size: 85px;
+}
+
+.banner-sub-title {
+    font-weight: 600;
+    font-size: 45px;
     margin-bottom: 20px;
 }
 
-.banner-description {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/*main section styles*/
-/*About section style*/
-.about {
-    padding: 130px;
+.Greetings-website {
+    color: blue;
+    font-size: 18px;
+    margin-bottom: 30px;
+    background-color: aquamarine;
+    /* border: 5px solid tomato; */
+    border-left: 5px solid salmon;
+    border-right: 5px solid salmon;
     border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 5px 10px;
+}
+
+/* main section */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section{
+    margin-top: 130px;
+}
+/* about section styles */
+.about {
     background: #FFF8F3;
-    margin: 130px 0;
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+}
+
+.glance-courses {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+    border: 2px solid  salmon;
+    border-radius: 10px;
+    color: #FD6E0A;
+}
+
+.section-description {
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about .info-title {
+    font-size: 20px;
+    color: #757575;
+}
+
+.info-description {
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747;
+}
+
+/* What i do styles */
+
+.skills-container{
+    display: flex;
+    gap: 24px;
+}
+.skill{
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 30px;
+}
+.skill-title{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.skill-description{
+    color: #757575;
+}
+
+/* Resume Styles */
+.resume-content{
+    display: flex;
+    gap: 24px;
+}
+.study-contentHW{
+    height: 50%;
+    width: 50%;
+    border: 2px solid salmon;
+    border-radius: 5px;
+    padding: 10px;
+}
+.resume-item{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.resume .title{
+    font-weight: 700;
+    font-size: 25px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+.resume .sub-title{
+    color: #757575;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.resume .description{
+    color: #757575;
+}
+
+.resume-button{
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* contact styles */
+.contact{
+    display: flex;
+    gap: 100px;
+    background: #FFF8F3;
+    padding: 130px 200px;
+}
+.contact .section-title{
+    text-align: left;
+}
+
+.contact input[type="text"], input[type="email"], textarea{
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+
+input{
+    height: 64px;
+}
+
+.contact a{
+    text-decoration: none;
 }
