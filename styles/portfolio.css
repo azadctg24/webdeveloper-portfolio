@@ -25,10 +25,9 @@
     border-radius: 5px;
     background: #FD6E0A;
 }
-
 .header {
     background: #FFF8F3;
-    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-image: url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: bottom right, left;
 }
@@ -203,6 +202,7 @@ section{
 }
 .contact .section-title{
     text-align: left;
+    text-decoration: overline;
 }
 
 .contact input[type="text"], input[type="email"], textarea{
